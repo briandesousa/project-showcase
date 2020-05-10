@@ -4,3 +4,12 @@
 
 Simple project showcase website hosted at [http://briandesousa.tech](http://briandesousa.tech).
 
+## Scripts
+
+`npm start` runs the app in the development mode at [http://localhost:3000](http://localhost:3000)
+
+`npm test` launches the test runner in the interactive watch mode
+
+`npm run build` builds the app for production to the `build` folder
+
+`npm run eject` is a one-way operation to remove the single build dependency from the project and copy all config files and transitive dependnecies so you have full control
