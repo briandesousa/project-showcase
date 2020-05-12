@@ -4,6 +4,8 @@
 
 Simple project showcase website hosted at [http://briandesousa.tech](http://briandesousa.tech).
 
+[generated facvicon](https://favicon.io/favicon-generator/?t=PS&ff=Just+Me+Again+Down+Here&fs=110&fc=%23FFFFFF&b=rounded&bc=%23209CEE)
+
 ## Scripts
 
 `npm start` runs the app in the development mode at [http://localhost:3000](http://localhost:3000)
