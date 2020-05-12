@@ -8,13 +8,9 @@ const app = express();
 app.set('port', PORT);
 app.use(bodyParser.json());
 
-app.use('/api/', require(path.join(__dirname, 'routes', 'api')));
+app.use('/api', require(path.join(__dirname, 'api', 'routes')));
 
-app.use((req, res, next) => {
-    const err = new Error(`${req.method} ${req.url} Not Found`);
-    err.status = 404;
-    next(err);
-});
+app.use('/', express.static(path.join(__dirname, 'build')));
 
 app.use((err, req, res, next) => {
     console.error(err);
@@ -29,8 +25,3 @@ app.use((err, req, res, next) => {
 app.listen(PORT, () => {
     console.log(`Express server started on port ${app.get('port')}`);
 });
-
-
-const router = express.Router();
-
-const apiPath = __dirname + '/api/';
