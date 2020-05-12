@@ -10,6 +10,15 @@ app.use(bodyParser.json());
 
 app.use('/api', require(path.join(__dirname, 'api', 'routes')));
 
+app.use('/health', (req, res, next) => {
+    res.json({
+        "app-config": {
+            "env": app.get('env'),
+            "port": app.get('port')
+        }
+    });
+});
+
 app.use('/', express.static(path.join(__dirname, 'build')));
 
 app.use((err, req, res, next) => {
