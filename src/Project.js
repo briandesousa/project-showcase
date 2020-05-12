@@ -1,10 +1,10 @@
 import React from 'react';
-import './ProjectList.css';
+import './Project.css';
 
-function ProjectList(props) {
+function Project(props) {
 
     return (
-        <div className="projectListContainer">
+        <div className="project">
             <div>
                 <h2>{props.name}</h2>
                 <p>{props.description}</p>
@@ -14,4 +14,4 @@ function ProjectList(props) {
     )
 };
 
-export default ProjectList;
+export default Project;
