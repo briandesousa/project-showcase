@@ -31,6 +31,7 @@ function ProjectListContainer(props) {
             <div>
                 {projects.map(project => (
                     <Project
+                        key={project.name}
                         name={project.name}
                         description={project.description}
                         url={project.url}>
