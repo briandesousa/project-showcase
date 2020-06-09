@@ -40,3 +40,7 @@ it('renders project list', async () => {
 
     expect(container.querySelector('h2').textContent).toBe(fakeProjectList.projects[0].name);
 })
+
+it('fails everytime, why?', async () => {
+    expect('everything').toBe('wrong');
+})
