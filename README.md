@@ -18,6 +18,7 @@ You can build, test and run the application outside of the Docker container:
 
 You can buid and run the application within a Docker container:
 
-1. `docker build -tag projectshowcase:1.0` to build an image
-2. `docker run --publish 8080:8080 --name ps projectshowcase:1.0` to create a new container from the image
+1. `docker build . --tag projectshowcase:1.0.0` to build an image
+2. `docker run -d -p 8080:8080 --name ps projectshowcase:1.0.0` to create a new container from the image
 3. Access the UI at [http://localhost:8080](http://localhost:8080)
+4. `docker exec -it ps bash` to open a bash shell on the running container
