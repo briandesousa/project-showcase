@@ -8,9 +8,11 @@ ENV PORT 8080
 
 COPY package*.json ./
 USER node
-RUN npm install --production && npm run build
+RUN npm install
 
 COPY --chown=node:node . .
+
+RUN npm run build
 
 EXPOSE 8080
 

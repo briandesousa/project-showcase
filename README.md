@@ -16,7 +16,7 @@ You can build, test and run the application outside of the Docker container:
 * `node server.js` to run the Express backend API at [http://localhost:3001](http://localhost:3001)
 * `npm start` to run the React front-end UI at [http://localhost:3000](http://localhost:3000)
 
-You can buid and run the application within a Docker container:
+You can build and run the application within a Docker container:
 
 1. `docker build . --tag projectshowcase:1.0.0` to build an image
 2. `docker run -d -p 8080:8080 --name ps projectshowcase:1.0.0` to create a new container from the image
