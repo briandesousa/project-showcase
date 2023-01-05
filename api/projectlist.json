@@ -1,0 +1,19 @@
+{
+    "projects": [
+        {
+            "name": "daniel-homework",
+            "description": "Homemwork app for Daniel",
+            "url": "https://github.com/briandesousa/daniel-homework"
+        },
+        {
+            "name": "firebase-with-react-hooks",
+            "description": "Using React hooks to manage state backed by a Firebase firestore database",
+            "url": "https://github.com/briandesousa/firebase-with-react-hooks"
+        },
+        {
+            "name": "node-worker-thread-rxjs",
+            "description": "A simple example of how to use Node worker_thread module with RxJS observables to stream data between the worker thread and main thread.",
+            "url": "https://github.com/briandesousa/node-worker-thread-rxjs"
+        }
+    ]
+}
